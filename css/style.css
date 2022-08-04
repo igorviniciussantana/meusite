@@ -54,3 +54,42 @@ clip-path: circle(50% at 50% 50%);
 
 
 }
+
+a{
+color: #F2E3D5;
+text-decoration: none;
+background-color:#024959;
+width: 100%;
+
+display: flex;
+border-radius: 2px;
+transition: 500ms;
+margin-bottom: 10px;
+
+}
+
+a:hover{
+    background-color:#033742;
+    transition: 500ms;
+ transform: scale(1.2);
+
+
+}
+
+
+
+.icon{
+background-color: #3CA6A6;
+display: flex;
+align-items: center;
+justify-content: center;
+padding: 2px 3px;
+border-radius: 2px 0 0 2px;
+
+margin-right: 10px;
+
+color: #012E40;
+
+}
+
+
