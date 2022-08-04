@@ -1,95 +1,144 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
-*{
-margin: 0;
-padding: 0;
-box-sizing: border-box;
-font-family: 'Poppins', sans-serif;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
-body{
+body {
     width: 100vw;
     height: 100vh;
-display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: center;
-background-color: #024959;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #024959;
 }
 
-h1{
-color:#F2E3D5;
-font-size: 3rem;
-
-
-}
-
-p{
-    color:#F2E3D5;
-
-
+h1 {
+    color: #F2E3D5;
+    font-size: 3rem;
 
 
 }
 
-.card{
-background-color:#012E40 ;
+p {
+    color: #F2E3D5;
 
-padding: 2rem 1rem;
 
-border-radius: 1rem;
-
-display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: center;
-
-width: 30%;
-
-}
-
-img{
-
-width: 40%;
-clip-path: circle(50% at 50% 50%);
 
 
 }
 
-a{
-color: #F2E3D5;
-text-decoration: none;
-background-color:#024959;
-width: 100%;
+.card {
+    background-color: #012E40;
 
-display: flex;
-border-radius: 2px;
-transition: 500ms;
-margin-bottom: 10px;
+    padding: 2rem 1rem;
+
+    border-radius: 1rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    width: 30%;
 
 }
 
-a:hover{
-    background-color:#033742;
+img {
+
+    width: 40%;
+    clip-path: circle(50% at 50% 50%);
     transition: 500ms;
- transform: scale(1.2);
+
+}
+
+img:hover{
+
+filter:grayscale(100);
+transition: 500ms;
+cursor: pointer;
+
+
+}
+
+
+.linkcard {
+    color: #F2E3D5;
+    text-decoration: none;
+    background-color: #024959;
+    width: 80%;
+
+
+    display: flex;
+    border-radius: 3px;
+    transition: 500ms;
+    margin-top: 10px;
+
+}
+
+.linkcard p {
+
+    padding: 10px 0;
+
+}
+
+
+.linkcard:hover {
+    background-color: #033742;
+    transition: 500ms;
+    transform: scale(1.2);
 
 
 }
 
 
 
-.icon{
-background-color: #3CA6A6;
-display: flex;
-align-items: center;
-justify-content: center;
-padding: 2px 3px;
-border-radius: 2px 0 0 2px;
+.icon {
+    background-color: #3CA6A6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2px 3px;
+    border-radius: 2px 0 0 2px;
 
-margin-right: 10px;
+    margin-right: 10px;
 
-color: #012E40;
+    color: #012E40;
 
 }
 
+button {
 
+    background-color: #3CA6A6;
+    width: 100%;
+    border: none;
+    color: #F2E3D5;
+    padding: 10px 0;
+    border-radius: 3px;
+    font-size: 1.3rem;
+
+    margin-top: 10px;
+
+    transition: 500ms;
+}
+
+button:hover {
+
+    transform: scale(1.1);
+    cursor: pointer;
+
+    transition: 500ms;
+
+
+}
+
+.button{
+width: 80%;
+
+
+
+}
