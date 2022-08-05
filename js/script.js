@@ -1,7 +1,6 @@
 var slider = document.querySelector(".slider");
 var body = document.getElementById("body");
 var checkbox = document.getElementById("checkbox");
-var github = document.getElementById("github");
 var card = document.getElementById("card");
 var links = document.querySelectorAll(".linkcard");
 var icons = document.querySelectorAll(".icon");
