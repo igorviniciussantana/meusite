@@ -13,8 +13,8 @@
     <title>Meu Site</title>
 </head>
 
-<body>
-    <div class="card">
+<body id="body">
+    <div class="card" id="card">
         <img src="images/profile.jpg" alt="">
         <h1>Igor Vinicius</h1>
         <p>Desenvolvedor Full Stack Junior</p>
@@ -28,11 +28,22 @@
             <div class="icon"><span class="material-symbols-outlined">
                     data_object
                 </span></div>
-            <p>Meu GitHub</p>
+            <p id="github">Meu GitHub</p>
         </a>
 
-        <a href="pages/saibamais.html" class="button"><button>Saiba Mais!</button></a>
+        <a href="pages/saibamais.html" class="button"><button id="button">Saiba Mais!</button></a>
+
+        <p class="control">
+            Azul
+        <label class="switch"  onclick="changeColor()">
+            <input type="checkbox" id="checkbox">
+            <span class="slider round"></span>
+          </label>
+        Verde
+        </p>
     </div>
+
+    <script src="js/script.js"></script>
 </body>
 
 </html>

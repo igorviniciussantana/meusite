@@ -1,144 +1,186 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
 
 body {
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color: #024959;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #024959;
 }
 
 h1 {
-    color: #F2E3D5;
-    font-size: 3rem;
-
-
+  color: #f2e3d5;
+  font-size: 3vw;
 }
 
 p {
-    color: #F2E3D5;
-
-
-
-
+  color: #f2e3d5;
+  font-size: 1.4vw;
 }
 
 .card {
-    background-color: #012E40;
+  background-color: #012e40;
 
-    padding: 2rem 1rem;
+  padding: 2rem 1rem;
 
-    border-radius: 1rem;
+  border-radius: 1rem;
 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 
-    width: 30%;
-
+  width: 30vw;
 }
 
 img {
-
-    width: 40%;
-    clip-path: circle(50% at 50% 50%);
-    transition: 500ms;
-
+  width: 40%;
+  clip-path: circle(50% at 50% 50%);
+  transition: 500ms;
 }
 
-img:hover{
-
-filter:grayscale(100);
-transition: 500ms;
-cursor: pointer;
-
-
+img:hover {
+  filter: grayscale(100);
+  transition: 500ms;
+  cursor: pointer;
 }
-
 
 .linkcard {
-    color: #F2E3D5;
-    text-decoration: none;
-    background-color: #024959;
-    width: 80%;
+  color: #f2e3d5;
+  text-decoration: none;
+  background-color: #024959;
+  width: 80%;
 
-
-    display: flex;
-    border-radius: 3px;
-    transition: 500ms;
-    margin-top: 10px;
-
+  display: flex;
+  border-radius: 3px;
+  transition: 500ms;
+  margin-top: 10px;
 }
 
 .linkcard p {
-
-    padding: 10px 0;
-
+  padding: 10px 0;
 }
-
 
 .linkcard:hover {
-    background-color: #033742;
-    transition: 500ms;
-    transform: scale(1.2);
-
-
+  background-color: #033742;
+  transition: 500ms;
+  transform: scale(1.2);
 }
 
-
-
 .icon {
-    background-color: #3CA6A6;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 2px 3px;
-    border-radius: 2px 0 0 2px;
+  background-color: #3ca6a6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2px 3px;
+  border-radius: 2px 0 0 2px;
 
-    margin-right: 10px;
+  margin-right: 10px;
 
-    color: #012E40;
-
+  color: #012e40;
 }
 
 button {
+  background-color: #3ca6a6;
+  width: 100%;
+  border: none;
+  color: #f2e3d5;
+  padding: 10px 0;
+  border-radius: 3px;
+  font-size: 1.3rem;
 
-    background-color: #3CA6A6;
-    width: 100%;
-    border: none;
-    color: #F2E3D5;
-    padding: 10px 0;
-    border-radius: 3px;
-    font-size: 1.3rem;
+  margin-top: 10px;
 
-    margin-top: 10px;
-
-    transition: 500ms;
+  transition: 500ms;
 }
 
 button:hover {
+  transform: scale(1.1);
+  cursor: pointer;
 
-    transform: scale(1.1);
-    cursor: pointer;
-
-    transition: 500ms;
-
-
+  transition: 500ms;
 }
 
-.button{
-width: 80%;
+.button {
+  width: 80%;
+}
 
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
 
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
 
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #2196f3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196f3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.control {
+  margin-top: 10px;
+  display: flex;
+  column-gap: 20px;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
 }
