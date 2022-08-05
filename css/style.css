@@ -4,6 +4,13 @@
   .card {
     width: 30vw;
   }
+  h1 {
+    font-size: 3vw;
+  }
+  
+  p {
+    font-size: 1.4vw;
+  }
 }
 @media (max-width: 800px) {
   .card {
@@ -30,12 +37,10 @@ body {
 
 h1 {
   color: #f2e3d5;
-  font-size: 3vw;
 }
 
 p {
   color: #f2e3d5;
-  font-size: 1.4vw;
 }
 
 .card {
