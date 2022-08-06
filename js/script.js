@@ -15,15 +15,15 @@ function changeColor() {
     card.style.cssText = "background-color: #06471F";
 
     links.forEach((i) => {
-      i.style.backgroundColor = "#12C757";
+      i.style.backgroundColor = "#14A647";
     });
 
     icons.forEach((i) => {
-        i.style.backgroundColor = "#14A647";
+        i.style.backgroundColor = "#12C757";
         i.style.color = "#06471F"
       });
 
-      button.style.cssText = "background-color: #14A647";
+      button.style.cssText = "background-color: #12C757";
 
       slider.style.cssText = "background-color: #14A647"
   } else {
@@ -47,3 +47,5 @@ function changeColor() {
     console.log("desmarcado");
   }
 }
+
+

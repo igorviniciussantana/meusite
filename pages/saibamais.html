@@ -1,34 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/saibamais.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/saibamais.css" />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
     <title>Saiba Mais - Igor Vinicius</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <nav>
-        <ul>
-            <li><a href="../index.html">Página Inicial</a></li>
-            <li><a href="https://www.behance.net/igorvinicius8" target="_blank">Behance</a></li>
-            <li><a href="https://github.com/igorviniciussantana" target="_blank">GitHub</a></li>
-        </ul>
+      <ul>
+        <li><a href="../index.html">Página Inicial</a></li>
+        <li>
+          <a href="https://www.behance.net/igorvinicius8" target="_blank"
+            >Behance</a
+          >
+        </li>
+        <li>
+          <a href="https://github.com/igorviniciussantana" target="_blank"
+            >GitHub</a
+          >
+        </li>
+      </ul>
     </nav>
-    <h1>Do que eu gosto?</h1>
+    <h1 class="animate__animated animate__slideInLeft">Do que eu gosto?</h1>
     <details>
-        <summary>Minhas Músicas Favoritas</summary>
+      <summary>Minhas Músicas Favoritas</summary>
     </details>
 
     <details>
-        <summary>Meus Filmes Favoritos</summary>
+      <summary>Meus Filmes Favoritos</summary>
+      <div class="filmes">
+        <div class="card" onmouseover="animate()">
+          <h1>Django</h1>
+          <p class="p">
+            No sul dos Estados Unidos, o ex-escravo Django faz uma aliança
+            inesperada com o caçador de recompensas Schultz para caçar os
+            criminosos mais procurados do país e resgatar sua esposa de um
+            fazendeiro que força seus escravos a participar de competições
+            mortais.
+          </p>
+          <img src="../images/filmes/django.jpg" alt="" srcset="" />
+        </div>
+        <div class="card " onmouseover="animate()">
+          <h1>Drive</h1>
+          <p class="p">
+            Um habilidoso motorista, que é dublê em cenas de perseguição em
+            filmes de Hollywood, também usa seu talento no volante para ser
+            piloto de fuga em assaltos. Seu estilo de vida solitário e
+            misterioso começa a mudar no momento em que se apaixona por uma
+            mulher cujo marido está prestes a sair da prisão. Enquanto isso, o
+            chefe da sua oficina mecânica está tentando organizar uma corrida
+            com dinheiro sujo.
+          </p>
+          <img src="../images/filmes/drive.jpg" alt="" srcset="" />
+        </div>
+        <div class="card" onmouseover="animate()">
+          <h1>Cidade de Deus</h1>
+          <p class="p">
+            Buscapé é um jovem pobre, negro e sensível, que cresce em um
+            universo de muita violência. Ele vive na Cidade de Deus, favela
+            carioca conhecida por ser um dos locais mais violentos do Rio.
+            Amedrontado com a possibilidade de se tornar um bandido, Buscapé é
+            salvo de seu destino por causa de seu talento como fotógrafo, o qual
+            permite que siga carreira na profissão. É por meio de seu olhar
+            atrás da câmera que ele analisa o dia a dia da favela em que vive,
+            onde a violência aparenta ser infinita.
+          </p>
+          <img src="../images/filmes/cdd.jpg" alt="" srcset="" />
+        </div>
+      </div>
     </details>
 
     <details>
-        <summary>Meus Jogos Favoritos</summary>
+      <summary>Meus Jogos Favoritos</summary>
     </details>
-</body>
 
+    <script src="../js/sm.js"></script>
+  </body>
 </html>
